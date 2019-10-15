@@ -2,6 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import {HttpClientModule} from '@angular/common/http';
 import { ChatService } from './chat.service';
+import {observable} from 'rxjs';
 
 describe('ChatService', () => {
   beforeEach(() => TestBed.configureTestingModule({
@@ -18,12 +19,12 @@ describe('ChatService', () => {
     const service: ChatService = TestBed.get(ChatService);
     expect(service.add).toBeTruthy();
    });
-   it('add function should return observable', () => {
+   it('add function should not return null', () => {
     const service: ChatService = TestBed.get(ChatService);
     expect(service.add({
       Uname:"a",
       message:"aaaa"
-    })).toBe('observable value');
+    })).not.toBeNull();
    });
 
    it('should have get function', () => {
