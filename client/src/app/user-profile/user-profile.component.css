@@ -1,0 +1,13 @@
+#image-property{
+  /* position: absolute;
+  margin-left: 50%;
+  margin-top: 0vw; */
+  width:250px;
+  height:auto;
+  border-radius: 50%;
+}
+.profilestyle{
+display: flex;
+flex-wrap: wrap-reverse;
+justify-content: space-around;
+}

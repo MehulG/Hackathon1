@@ -1,0 +1,18 @@
+.chat{
+  padding: 0.5em;
+  margin: 0.5em;
+}
+.message{
+  display: inline;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 0.5em;
+  color: black;
+
+}
+/* .sent{
+  margin: 1em;
+  float: right;
+} */

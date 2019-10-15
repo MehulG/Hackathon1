@@ -1,1 +1,59 @@
-<p>chat works!</p>
+<!-- <p>chat works!</p>
+<div id="nav">
+    <img src={{Avatar}} alt="profile" id="profile">
+  </div>
+<div id="container">
+  <div id="chat-container">
+
+    <app-message *ngFor="let message of chats" [message]="message"></app-message>
+
+    <form (ngSubmit)="onSubmit()" [formGroup]="submitForm" id="type-message">
+      <input formControlName="submitInput" id="input">
+      <button id="search_button">button</button>
+
+    </form>
+  </div>
+</div> -->
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+     
+      <mat-accordion>
+        <mat-expansion-panel class="sidenav">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Repositories
+            </mat-panel-title>
+            <mat-panel-description>
+              See your Repositories here
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+      <li>repo 1</li>
+      <li>repo 2</li>
+      <li>repo 3</li>
+        </mat-expansion-panel>
+      
+      </mat-accordion>
+      
+  
+    </mat-drawer>
+    <mat-drawer-content>
+      
+  <div id="container">
+    <div id="chat-container" ngx-auto-scroll lock-y-offset="10" observe-attributes>
+      
+      <app-message *ngFor="let msg of chats" class="example-item" [message]="msg"></app-message>
+      
+      <!-- <form (ngSubmit)="onSubmit()" [formGroup]="submitForm" id="type-message">
+        <input formControlName="submitInput" id="input">
+        <button id="search_button">Send</button> 
+      </form> -->
+       
+    </div>
+  </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  <form (ngSubmit)="onSubmit()" [formGroup]="submitForm" id="type-message" class="position">
+    <input formControlName="submitInput" id="input">
+    <button id="search_button">Send</button> 
+  </form>

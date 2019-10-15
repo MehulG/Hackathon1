@@ -1,12 +1,14 @@
-#watch{
-  display: inline-flex;
-  margin-left: 42vw;
-  margin-top: 10vh;
-  
- }
- #heading{
-  margin-left: 38vw;
-  margin-top: 20vh;
-  font-style: italic;
-  font-family: -webkit-body;
- }
+body{
+  padding:0;
+  margin: 0;
+  overflow: auto;
+}
+html{
+  overflow: hidden;
+}
+a{
+ margin-left:5vw;
+ text-decoration:none;
+ color:antiquewhite;
+ text-decoration-style:none;
+}
